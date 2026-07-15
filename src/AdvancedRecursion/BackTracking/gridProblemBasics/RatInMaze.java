@@ -1,4 +1,4 @@
-package AdvancedRecursion.BackTracking;
+package AdvancedRecursion.BackTracking.gridProblemBasics;
 
 public class RatInMaze {
     public static void traceBack(boolean [][]maze , int row , int col , String st){

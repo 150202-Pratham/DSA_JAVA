@@ -1,4 +1,4 @@
-package AdvancedRecursion.BackTracking;
+package AdvancedRecursion.BackTracking.gridProblemBasics;
 
 public class MaxAreaIsland {
 
