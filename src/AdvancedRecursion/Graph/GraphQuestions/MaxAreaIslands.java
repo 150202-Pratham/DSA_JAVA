@@ -1,4 +1,4 @@
-package AdvancedRecursion.Graph.GraphQuestions.DFSQuestions;
+package AdvancedRecursion.Graph.GraphQuestions;
 
 import java.util.*;
 

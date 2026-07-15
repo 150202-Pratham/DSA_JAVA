@@ -3,7 +3,7 @@ package AdvancedRecursion.Graph.GraphQuestions;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class MakingLargeIsland {
+public class ShortestBridgeApproach2 {
     public static class Pair{
         int row;
         int col;

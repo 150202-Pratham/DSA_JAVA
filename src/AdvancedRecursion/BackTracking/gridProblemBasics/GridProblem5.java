@@ -1,4 +1,4 @@
-package AdvancedRecursion.BackTracking;
+package AdvancedRecursion.BackTracking.gridProblemBasics;
 
 public class GridProblem5 {
 //    this is a Simulation to learn all the Paths and core behind BackTracking
