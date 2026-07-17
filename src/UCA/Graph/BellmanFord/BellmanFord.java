@@ -70,16 +70,23 @@ public class BellmanFord {
     }
 
     public static void main(String[] args) {
-        Graph gp = new Graph(5);
-        gp.addEdge(0,1,-1);
-        gp.addEdge(0,2,4);
-        gp.addEdge(1,2,3);
-        gp.addEdge(1,3,2);
-        gp.addEdge(1,4,2) ;
-        gp.addEdge(3,2,5) ;
-        gp.addEdge(3,2,5) ;
-        gp.addEdge(3,1,1);
-        gp.addEdge(4,3,-3) ;
+        Graph gp = new Graph(4);
+//        gp.addEdge(0,1,-1);
+//        gp.addEdge(0,2,4);
+//        gp.addEdge(1,2,3);
+//        gp.addEdge(1,3,2);
+//        gp.addEdge(1,4,2) ;
+//        gp.addEdge(3,2,5) ;
+//        gp.addEdge(3,2,5) ;
+//        gp.addEdge(3,1,1);
+//        gp.addEdge(4,3,-3) ;
+
+         gp.addEdge(0,1,4);
+         gp.addEdge(0,2,5);
+         gp.addEdge(1,2,-2);
+         gp.addEdge(2,3,3);
+         gp.addEdge(1,3,6);
+
 
         gp.bellmanFord(0);
     }
