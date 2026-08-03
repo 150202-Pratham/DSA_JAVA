@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class Testing {
    public static void skipCharacter(String str, StringBuilder st , char skip){
        if(str.isEmpty()){
@@ -53,17 +56,54 @@ public class Testing {
 //        }
 
 //        Skip a Particular Character from yhe String
-        StringBuilder st = new StringBuilder() ;
-
-        skipCharacter("baccad" , st , 'a') ;
-
-        System.out.println(st.toString());
+//        StringBuilder st = new StringBuilder() ;
+//
+//        skipCharacter("baccad" , st , 'a') ;
+//
+//        System.out.println(st.toString());
 
 //        Skip a Particular String Within a String
-        StringBuilder st1 = new StringBuilder() ;
-        skipString("KiwiAppleOrangeKiwi" , st1 , "Kiwi") ;
-        System.out.println(st1.toString());
+//        StringBuilder st1 = new StringBuilder() ;
+//        skipString("KiwiAppleOrangeKiwi" , st1 , "Kiwi") ;
+//        System.out.println(st1.toString());
+
+
+        int [] brr = { 100, 4, 200, 1, 3, 2 } ;
+
+        System.out.println(longestCommonSequence(brr));
+
+    }
+
+
+    public static int longestCommonSequence(int []arr){
+
+        Set<Integer> set = new HashSet<>() ;
+
+        for(int elem : arr){
+            set.add(elem) ;
+        }
+
+        int longestSequence = 0 ;
+
+        for(int i = 0 ; i<arr.length ; i++){
+
+            while(!set.contains(arr[i]-1)){
+
+                int currElem = arr[i] ;
+                int currentSequence = 1 ;
+
+                while (set.contains(currElem + 1)) {
+                    currElem += 1;
+                    currentSequence += 1;
+                }
+
+                longestSequence = Math.max(currentSequence, longestSequence);
+            }
+        }
+
+        return longestSequence ;
 
 
     }
+
 }
