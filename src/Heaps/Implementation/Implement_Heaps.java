@@ -5,15 +5,16 @@ import java.util.ArrayList;
 public class Implement_Heaps<T extends Comparable<T>>{
 
     private ArrayList<T> list ;
-
     public Implement_Heaps(){
         list = new ArrayList<>();
     }
+
     public void swap(int first , int second){
         T temp = list.get(first) ;
         list.set(first, list.get(second)) ;
         list.set(second , temp) ;
     }
+
     private int parent(int index){
         return (index-1)/2 ;
 
