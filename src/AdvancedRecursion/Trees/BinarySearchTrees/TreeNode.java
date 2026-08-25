@@ -10,4 +10,11 @@ public class TreeNode {
         this.val = val ;
 
     }
+    public void Traversal(TreeNode root){
+        if(root==null) return ;
+
+        Traversal(root.left) ;
+        System.out.println(root.val) ;
+        Traversal(root.right) ;
+    }
 }
