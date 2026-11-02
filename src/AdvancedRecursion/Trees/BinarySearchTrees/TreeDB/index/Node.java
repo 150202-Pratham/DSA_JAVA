@@ -1,13 +1,25 @@
-package AdvancedRecursion.Trees.BinarySearchTrees.TreeDB;
+package AdvancedRecursion.Trees.BinarySearchTrees.TreeDB.index;
 
-public class Node {
-   int key ;
-   Student value ;
+import AdvancedRecursion.Trees.BinarySearchTrees.TreeDB.model.Student;
 
-   Node left ;
-   Node right ;
+public class Node<K extends Comparable<K> , V> {
+   K key ;
+   V value ;
+
+   Node<K,V> left ;
+   Node<K,V> right ;
 
    int size ;
 
 
+   public Node(K key , V value){
+      this.key = key ;
+      this.value = value ;
+
+      this.right = null ;
+      this.left = null ;
+
+      this.size = 1 ;
+
+   }
 }
