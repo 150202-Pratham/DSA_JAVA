@@ -1,4 +1,4 @@
-package Heaps.Implementation.TopKElements;
+package Heaps.TopKElements;
 
 import java.util.*;
 

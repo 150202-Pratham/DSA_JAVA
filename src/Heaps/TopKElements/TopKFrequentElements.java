@@ -1,9 +1,6 @@
-package Heaps.Implementation.TopKElements;
+package Heaps.TopKElements;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class TopKFrequentElements {
 
@@ -50,13 +47,38 @@ public class TopKFrequentElements {
 
     }
 
+
+    public static int[] topKFrequentElements(int []nums , int k){
+
+        HashMap<Integer, Integer> map = new HashMap<>() ;
+
+        for(int num : nums){
+
+            map.put(num , map.getOrDefault(num , 0)+1) ;
+
+        }
+
+        List<Integer> list = new ArrayList<>(map.keySet()) ;
+
+        list.sort((a,b)->map.get(b) -map.get(a)) ;
+
+        int []result = new int[k] ;
+
+        for(int i = 0 ; i<k ; i++){
+            result[i] = list.get(i) ;
+
+        }
+        return result ;
+    }
+
     public static void main(String[] args) {
         int []nums = {1,1,1,2,2,3} ;
         int k = 2;
         TopKFrequentElements tpk = new TopKFrequentElements() ;
 
         int []result = tpk.topKFrequent(nums, k);
-        for(int elem : result){
+        int []output = tpk.topKFrequentElements(nums, k);
+        for(int elem : output){
             System.out.print(elem + " ");
 
         }

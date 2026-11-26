@@ -1,4 +1,4 @@
-package Heaps.Implementation.kth_largestSmallest_Questions;
+package Heaps.kth_largestSmallest_Questions;
 
 import java.util.PriorityQueue;
 

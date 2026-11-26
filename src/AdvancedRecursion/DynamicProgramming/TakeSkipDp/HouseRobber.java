@@ -6,7 +6,6 @@ import java.util.Arrays;
 public class HouseRobber {
     public static int robHouse(int []nums){
 
-
         if(nums.length==1) return nums[0] ;
 
         int[]dp = new int[nums.length];
