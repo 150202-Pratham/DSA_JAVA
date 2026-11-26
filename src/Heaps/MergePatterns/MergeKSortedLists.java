@@ -1,6 +1,5 @@
-package Heaps.Implementation.MergePatterns;
+package Heaps.MergePatterns;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MergeKSortedLists {

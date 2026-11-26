@@ -1,4 +1,4 @@
-package Heaps.Implementation.GreedyHeaps;
+package Heaps.GreedyHeaps;
 
 import java.util.PriorityQueue;
 
